@@ -1,9 +1,9 @@
-package com.example.addon;
+package nl.knijper.timechanger;
 
 import net.labymod.addon.AddonTransformer;
 import net.labymod.api.TransformerType;
 
-public class ExampleAddonTransformer extends AddonTransformer {
+public class Transformer extends AddonTransformer {
 
   @Override
   public void registerTransformers() {

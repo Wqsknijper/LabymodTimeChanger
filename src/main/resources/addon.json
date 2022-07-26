@@ -1,6 +1,10 @@
 {
-  "name": "Example Addon",
+  "name": "Time Changer",
   "uuid": "%uuid%",
-  "mainClass": "com.example.addon.ExampleAddon",
-  "transformerClass": "com.example.addon.ExampleAddonTransformer"
+  "mainClass": "nl.knijper.timechanger.Main",
+  "transformerClass": "nl.knijper.timechanger.Transformer",
+  "description": "Change the time for your personal view, client-sided: nobody else will see you changed the time for yourself.",
+  "version": 1,
+  "author": "Wqsknijper",
+  "icon": "https://i.imgur.com/vox0FsM.png"
 }
