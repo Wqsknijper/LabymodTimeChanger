@@ -15,7 +15,7 @@ public class TimeChanger {
         this.main = main;
         this.mc = main.getMinecraft();
 
-        currentTime = TimeDropdownMenu.EnumModuleTime.DEFAULT;
+        currentTime = TimeDropdownMenu.EnumModuleTime.SERVER_TIME;
     }
     
     static TimeDropdownMenu.EnumModuleTime currentTime;
@@ -32,7 +32,7 @@ public class TimeChanger {
             currentTime.time = customSliderTime;
             updateServerTime(customSliderTime);
         }
-        else if (currentTime == TimeDropdownMenu.EnumModuleTime.DEFAULT && lastServerPacket != null)
+        else if (currentTime == TimeDropdownMenu.EnumModuleTime.SERVER_TIME && lastServerPacket != null)
             updateServerTime(lastServerPacket.getWorldTime());
         else
             updateServerTime(currentTime.time);

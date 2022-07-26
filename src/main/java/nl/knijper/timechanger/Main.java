@@ -17,7 +17,7 @@ public class Main extends LabyModAddon {
   private Minecraft minecraft;
   private static Main instance;
 
-  private TimeDropdownMenu.EnumModuleTime timeChoice = TimeDropdownMenu.EnumModuleTime.DEFAULT;
+  private TimeDropdownMenu.EnumModuleTime timeChoice = TimeDropdownMenu.EnumModuleTime.SERVER_TIME;
   private Long sliderChoice = 0L;
 
   @Override

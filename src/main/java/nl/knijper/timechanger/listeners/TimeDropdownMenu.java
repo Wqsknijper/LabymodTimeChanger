@@ -33,7 +33,7 @@ public class TimeDropdownMenu {
     }
 
     public enum EnumModuleTime {
-        DEFAULT(null),
+        SERVER_TIME(null),
         DAY(1000L),
         SUNSET(13000L),
         NIGHT(18000L),

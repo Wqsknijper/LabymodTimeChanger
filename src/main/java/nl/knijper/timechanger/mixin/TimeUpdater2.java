@@ -34,7 +34,7 @@ public abstract class TimeUpdater2 {
     @Overwrite
     private void func_239141_x_() {
         this.func_239134_a_(getWorldInfo().getGameTime() + 1L);
-        if (getWorldInfo().getGameRulesInstance().getBoolean(GameRules.DO_DAYLIGHT_CYCLE) && TimeChanger.getTime() == TimeDropdownMenu.EnumModuleTime.DEFAULT) {
+        if (getWorldInfo().getGameRulesInstance().getBoolean(GameRules.DO_DAYLIGHT_CYCLE) && TimeChanger.getTime() == TimeDropdownMenu.EnumModuleTime.SERVER_TIME) {
             this.setDayTime(getWorldInfo().getDayTime() + 1L);
         }
     }

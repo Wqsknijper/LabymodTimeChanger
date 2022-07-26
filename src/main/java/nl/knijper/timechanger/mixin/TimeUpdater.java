@@ -27,7 +27,7 @@ public class TimeUpdater {
         if (client.getConnection() != null)
             PacketThreadUtil.checkThreadAndEnqueue(packetIn, client.getConnection(), this.client);
         main.getTimeChanger().updateLastServerTime(packetIn);
-        if (this.client.world != null && TimeChanger.getTime() != TimeDropdownMenu.EnumModuleTime.DEFAULT)
+        if (this.client.world != null && TimeChanger.getTime() != TimeDropdownMenu.EnumModuleTime.SERVER_TIME)
             main.getTimeChanger().updateServerTime(main.getTimeChanger().getCurrentTime());
         else
             main.getTimeChanger().updateServerTime(packetIn.getWorldTime());
